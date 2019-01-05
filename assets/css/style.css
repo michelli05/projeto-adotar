@@ -20,14 +20,40 @@ header{
 .menu{
     display: flex;
     text-align: center;
-    width: 300px;
+    width: 360px;
     justify-content: space-between;
     align-items: center;
 }
+#cadastro > a{
+    color: white;
+    margin-right: 4px;
+}
+
 a{
     text-decoration: none;
     color: black;
+    margin-right: 4px;
+    font-weight: bold;
 }
+#cadastro{
+    width: 85px;
+    height: 30px;
+    background-color: rgb(119, 150, 207);
+    margin-left: 6px;
+    border-radius: 4px;
+    align-items: center;
+    display: flex;
+    text-align: center;
+
+}
+
+#cadastro:hover{
+    width: 86px;
+    height: 31px;
+    background-color: rgb(105, 134, 189);
+}
+
+
 #barrinha{
     height: 20px;
     width: 2px;
@@ -38,6 +64,14 @@ a{
     width: 120px;
     align-items: center;
     justify-content: space-between;
+}
+
+.login > a:nth-child(1){
+    font-weight: bold;
+}
+
+.login > a:hover{
+    font-size: 18px;
 }
 
 .banner{
@@ -107,14 +141,22 @@ a{
     border-radius: 15px;
     border: 3px rgb(211, 211, 233) ridge;
 }
+.children:hover{
+    width: 255px;
+    height: 305px;
 
+}
 .children > img{
     margin-top: 5px;
     width: 90%;
     height: 55%;
+    border-radius: 2px;
 }
 .children > p{
     color: rgb(48, 46, 46);
+    width: 245px;
+    text-align: center;
+    display: flex;
 }
 h6{
     font-size: 18px;

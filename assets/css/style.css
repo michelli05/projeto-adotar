@@ -11,13 +11,29 @@ header{
     position: fixed;
     width: 100%;
     margin: 0;
+    align-items: center;
 }
-.logo{
+
+#menu-barrinha{
+    width: 45px;
+    height: 40px;
+    display: none;
+}
+
+.barra{
+    background-color: rgb(146, 146, 219);
+    width: 100%;
+    height: 8px;
+    border-radius: 4px;
+    margin-top: 2px;
+}
+
+#logo{
     height: 50px;
     width: 160px;
     background-image: linear-gradient(rgb(235, 217, 217), rgb(248, 203, 203), rgb(190, 190, 219));
 }
-.menu{
+#menu{
     display: flex;
     text-align: center;
     width: 360px;
@@ -112,19 +128,20 @@ a{
     background-color: rgb(252, 252, 252);
 }
 
-.inf-adotar{
+#inf-adotar{
     width: 500px;
     text-align: center;
 }
 
-.inf-adotar > h2{
+#inf-adotar > h2{
     width: 400px;
     text-align: center;
     margin-left: 20px;
+    font-size: 18pt;
 
 }
 
-.perfil-children{
+#perfil-children{
     width: 100%;
     height: 400px;
     background-image: linear-gradient(rgb(235, 217, 217), rgb(248, 203, 203), rgb(190, 190, 219));
@@ -144,7 +161,6 @@ a{
 .children:hover{
     width: 255px;
     height: 305px;
-
 }
 .children > img{
     margin-top: 5px;
@@ -161,4 +177,40 @@ a{
 h6{
     font-size: 18px;
     margin: 0;
+}
+
+@media (max-width: 1023px){
+    .children:nth-child(4){
+        display: none;
+    }
+}
+@media (max-width: 800px){
+    #menu{
+        display: none;
+    }
+    #menu-barrinha{
+        display: flex;
+        flex-direction: column;
+    }
+    iframe{
+        width: 320px;
+        height: 200px;
+    }
+    #inf-adotar{
+        width: 400px;
+    }
+    #inf-adotar > h2{
+        font-size: 17pt;
+        margin: 0;
+    }
+    .children{
+        width: 210px;
+        height: 250px;
+    }  
+    .children > p{
+        width: 195px;
+        margin-left: 10px;
+        margin-top: 2px;
+    }
+
 }

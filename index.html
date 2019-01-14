@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +8,19 @@
     <title>Adotar</title>
 </head>
 <body>
-    <header>
-        <div id="menu-barrinha">
-            <div class="barra"></div>
-            <div class="barra"></div>
-            <div class="barra"></div>
+    <div id="menu-responsivo">
+        <div class="botao-fechar">
+            <div class="barr"></div>
         </div>
+    </div>
+    <header>
+        <button id="botao-menu">
+            <div id="menu-barrinha">
+                <div class="barra"></div>
+                <div class="barra"></div>
+                <div class="barra"></div>
+            </div>
+        </button>   
         <div id="logo"></div>
         <nav id="menu">
             <a href="">Home</a>
@@ -23,7 +30,7 @@
         </nav>
         <nav class="login">
             <a href="">Login</a>
-            <div id="barrinha"></div>
+            <!-- <div id="barrinha"></div> -->
             <div id="cadastro"><a href="">Cadastro</a></div>
         </nav>
     </header>
@@ -31,10 +38,9 @@
         <div class="conteiner-inf">
             <!-- <div> 
                 <h4>Adote uma criança pelo o que ela é, e não pelo seu cabelo ou cor de pele.</h4>
-                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p> -->
-
-            </div> -->
-            <!-- <form action="">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            </div>
+            <form action="">
                 <input placeholder="Digite seu nome" type="text">
                 <input placeholder="Digite seu CPF" type="number" >
                 <input placeholder="Digite seu ID" type="password">
